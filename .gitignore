@@ -1,0 +1,11 @@
+/node_modules
+.env
+.env.test
+
+# Jest
+jest.config.js
+/tests
+bun.lockb
+# Prisma
+
+/prisma/migrations
