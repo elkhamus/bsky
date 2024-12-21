@@ -15,7 +15,7 @@ const createCommentController = async (req, res) => {
       },
     });
 
-    res.status(201).json(newComment);
+    res.status(201).json({ comment: newComment });
   } catch (error) {
     res.status(400).json({ message: error.message });
   }

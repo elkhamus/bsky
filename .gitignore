@@ -1,11 +1,32 @@
-/node_modules
+# Ignore node_modules directory
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore environment variable files
 .env
-.env.test
 
-# Jest
-jest.config.js
-/tests
+# Ignore build directories
+dist/
+build/
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Ignore coverage reports
+coverage/
+
+/node_modules
 bun.lockb
-# Prisma
-
-/prisma/migrations
+.env.test

@@ -14,7 +14,7 @@ const likePost = async (userId, postId) => {
     await prisma.like.delete({
       where: { id: existingLike.id },
     });
-    return { message: 'Post unliked successfully.' };
+    return { message: 'Post unliked successfully' };
   } else {
     // If the like does not exist, create a new like
     await prisma.like.create({
@@ -23,7 +23,7 @@ const likePost = async (userId, postId) => {
         postId,
       },
     });
-    return { message: 'Post liked successfully.' };
+    return { message: 'Post liked successfully' };
   }
 };
 
